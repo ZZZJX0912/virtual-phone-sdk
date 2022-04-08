@@ -1,0 +1,33 @@
+# 运行时文件
+logs/
+pm2Logs/
+npm-debug.log
+yarn-error.log
+node_modules/
+coverage/
+*debug.log
+
+# 编译产物
+dist
+bin
+*.map
+
+
+# 编辑器
+.idea/
+run/
+.DS_Store
+*.sw*
+*.un~
+dump.rdb
+
+# 环境变量
+.env
+.env.dev
+.env.local
+
+# 其他
+Todo.md
+todo.md
+components.json
+components.js
