@@ -4,8 +4,7 @@ export class vPhone {
    * 判断是否能够使用对应方法和Api
    */
   isSupported() {
-    const AudioContext =
-      window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
+    const AudioContext =window.AudioContext || window.webkitAudioContext || window.mozAudioContext || window.msAudioContext;
     return (
       AudioContext && window.navigator && window.navigator.mediaDevices && window.navigator.mediaDevices.getUserMedia
     );
@@ -76,7 +75,7 @@ export class vPhone {
       // throw new Error('vPhone create audioContext error');
     }
   }
-  
+
   //初始化录音器
   async initRecorder() {
     //参数合并

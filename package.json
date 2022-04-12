@@ -4,16 +4,19 @@
   "description": "virtual-phone-sdk",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --write ./src"
   },
   "author": "ZZZJX",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-env": "^7.16.11",
     "eslint": "^8.12.0",
-    "uuid": "^8.3.2"
-  },
-  "devDependencies": {
+    "rollup": "^2.70.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "uuid": "^8.3.2",
+    "@babel/preset-typescript": "^7.16.7",
     "prettier": "2.6.2"
   }
 }
