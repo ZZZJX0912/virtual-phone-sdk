@@ -1,3 +1,9 @@
+/**
+ *
+ * @param {AudioContext} audioCtx webAudio实例
+ * @param {Object} oscillatorNodeConfig 对应振荡器配置对象
+ * @returns
+ */
 //振荡器节点
 export const OscillatorNode=(audioCtx,oscillatorNodeConfig)=>{
   const defaultConfig = {

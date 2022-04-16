@@ -4,7 +4,7 @@
  * @param {Object} config 音频参数（采样率，声道）
  * @returns {MediaStreamAudioSourceNode} 录音音频源
  */
-export const mediaStreamAudioSourceNode=async(audioCtx,config)=>{
+export const mediaStreamAudioSourceNode = async (audioCtx,config)=>{
   try {
     const mediaStream = await window.navigator.mediaDevices.getUserMedia({
       audio: {
@@ -15,10 +15,8 @@ export const mediaStreamAudioSourceNode=async(audioCtx,config)=>{
     });
     //创建录音源
     const recordAudioSource = audioCtx.createMediaStreamSource(mediaStream); //MediaStreamAudioSourceNode
-
     return recordAudioSource
   } catch (error) {
     console.error('创建音频源-音频流创建流程出现错误：', error);
   }
-
 }

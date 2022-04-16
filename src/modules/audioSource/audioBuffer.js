@@ -1,7 +1,6 @@
 /**
- * 
  * @param {ArrayBuffer} arrayBuffer 传入作为音频源的arrayBuffer流
- * @return {AudioBuffer} 
+ * @return {AudioBuffer}
  */
 export const audioBuffer = (audioCtx,arrayBuffer)=>{
   let audioBuffer
