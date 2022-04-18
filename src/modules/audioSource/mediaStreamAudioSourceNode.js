@@ -1,5 +1,5 @@
 /**
- *
+ * 调用录音功能，利用录音源作为音频源
  * @param {AudioContext} audioCtx webAudio实例
  * @param {Object} config 音频参数（采样率，声道）
  * @returns {MediaStreamAudioSourceNode} 录音音频源
