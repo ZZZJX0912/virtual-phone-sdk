@@ -1,5 +1,5 @@
 /**
- *
+ * 混响
  * @param {AudioContext} audioCtx webAudio实例
  * @param {ArrayBuffer} mixinArrayBuffer 用于混响的数据（单声道，双声道）
  */
